@@ -25,3 +25,7 @@ yarn-error.log*
 # scratch sheets
 scratch.*
 scratch_*.*
+
+# Jetbrains stuff
+
+.idea/
