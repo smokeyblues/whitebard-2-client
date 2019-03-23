@@ -15,12 +15,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "predeploy": "yarn run build",
-    "deploy": "aws s3 sync build/ s3://whitebard --delete",
-    "postdeploy": "aws cloudfront create-invalidation --distribution-id E32I4USH2GWPW5 --paths /* && aws cloudfront create-invalidation --distribution-id E1IT6W5W1TC1AE --paths /* ",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  },
+  }
+,
   "eslintConfig": {
     "extends": "react-app"
   },
